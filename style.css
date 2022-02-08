@@ -40,7 +40,6 @@ h2{
     position: absolute;
     transform: rotate(30deg);
 }
-
 @keyframes mymove {
     form {bottom: 40vmin; left: 40vmin}
     to   {bottom: 100vmin; left: 70vmin}

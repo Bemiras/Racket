@@ -7,7 +7,7 @@ for (let i of inputs) {
 }
 
 function checkPassword () {
-    if (document.getElementById('password').value === '1') {
+    if (document.getElementById('password').value === 'Rocket') {
         for (let i of inputs) {
             i.disabled = false;
         }
@@ -19,9 +19,9 @@ function checkPassword () {
 function checkControls(){
     let startCheckbox = checkCheckbox();
     let startRange = checkRange();
-    let startRacket = startCheckbox * startRange;
+    let startRocket = startCheckbox * startRange;
 
-    if(startRacket === 1){
+    if(startRocket === 1){
         document.getElementById('launchButton').disabled = false;
     } else {
         document.getElementById('launchButton').disabled = true;
@@ -29,7 +29,7 @@ function checkControls(){
 
 }
 
-function checkCheckbox(startRacketCheckbox){
+function checkCheckbox(startRocketCheckbox){
     const inputsCheckbox = document.querySelectorAll('input[type="checkbox"]');
     let start = 0;
 
@@ -40,13 +40,13 @@ function checkCheckbox(startRacketCheckbox){
     }
 
     if(start === 6){
-        return startRacketCheckbox = 1;
+        return startRocketCheckbox = 1;
     } else {
-        return startRacketCheckbox = 0;
+        return startRocketCheckbox = 0;
     }
 }
 
-function checkRange(startRacketRange){
+function checkRange(startRocketRange){
     const inputsRange = document.querySelectorAll('input[type="range"]');
     let start = 0;
 
@@ -57,13 +57,13 @@ function checkRange(startRacketRange){
     }
 
     if(start === 5){
-        return startRacketRange = 1;
+        return startRocketRange = 1;
     } else {
-        return startRacketRange = 0;
+        return startRocketRange = 0;
     }
 }
 
-function runRacket(){
-    document.getElementById("racket").style.animation = "mymove 10s infinite";
-    document.getElementById("racket").style.animationIterationCount = 1;
+function runRocket(){
+    document.getElementById("rocket").style.animation = "mymove 10s infinite";
+    document.getElementById("rocket").style.animationIterationCount = 1;
 }
